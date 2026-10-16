@@ -1,52 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<link rel="stylesheet" href="style.css">
-<meta name="google" content="notranslate">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anniversary Surprise | 4U celebrations</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <meta name="theme-color" content="#10070d">
+
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Valentine Surprise | 4U Celebrations</title>
 </head>
 
 <body>
 
-<audio id="birthdayMusic" src="birthday.mp3" loop></audio>
+<audio id="birthdaMusic" src="birthday.mp3" loop></audio>
 
-<!-- INTRO: NO 4U ABOVE COUNTDOWN -->
+<!-- NAVBAR -->
+<nav class="top-nav" aria-label="Main navigation">
+    <a class="site-brand" href="https://mohvmed-imvm.github.io/4U-celebration/">
+        <span class="brand-mark">4U</span>
+        <span class="brand-caption">CELEBRATIONS</span>
+    </a>
 
+    <div class="nav-actions">
+        <button type="button" class="nav-link" id="aboutButton"
+            data-ar="عن النموذج" data-en="About">
+            عن النموذج
+        </button>
+
+        <button type="button" class="nav-order" id="headerOrder"
+            data-ar="اطلب موقعك" data-en="Order yours">
+            اطلب موقعك
+        </button>
+    </div>
+</nav>
+
+<!-- ABOUT MODAL -->
+<div class="modal-overlay" id="aboutModal" aria-hidden="true">
+    <section class="about-modal" role="dialog" aria-modal="true"
+        aria-labelledby="modalTitle">
+
+        <button type="button" class="modal-close" id="closeModal"
+            aria-label="Close">×</button>
+
+        <h2 id="modalTitle"
+            data-ar="مفاجأة فلانتاين ♡"
+            data-en="Valentine Surprise ♡">
+            مفاجأة فلانتاين ♡
+        </h2>
+
+        <p
+            data-ar=" ده نموذج تجريبي من 4U-celebration كل حاجه فيه قابله للتخصيص, تقدر تكلمنا وتشوف حابب تضيف ايه وتعدل ايه وتخصصه علي مزاجك."
+            data-en="This is a demo template by 4U celebrations.Everything in it is customizable; feel free to reach out to us to discuss what you’d like to add, change, or tailor to your own preferences.">
+           ده نموذج تجريبي من 4U-celebration كل حاجه فيه قابله للتخصيص, تقدر تكلمنا وتشوف حابب تضيف ايه وتعدل ايه وتخصصه علي مزاجك.
+        </p>
+
+        <button type="button" class="nav-order modal-order"
+            id="modalOrderButton"
+            data-ar="اطلب موقعك دلوقتي"
+            data-en="Order your site">
+            اطلب موقعك دلوقتي
+        </button>
+    </section>
+</div>
+
+<!-- INTRO -->
 <div class="intro" id="intro">
     <div class="glow"></div>
 
     <div class="intro-text" id="introText">
-        ...something special is waiting u 
+        ...something special is waiting for u
     </div>
 
     <div class="number" id="number">5</div>
 </div>
 
 <!-- MAIN PAGE -->
-
 <main class="main" id="main">
 
-    <!-- HEARTS STAY INSIDE THIS CLIPPED LAYER -->
     <div class="heart-layer" id="heartLayer" aria-hidden="true"></div>
 
     <div class="content">
 
-        <h1 id="pageHeading">.............</h1>
+        <h1 id="pageHeading"
+            data-ar="عاملينلك هدية صغيرة"
+            data-en="A Little Valentine Surprise">
+            A Little Valentine Surprise
+        </h1>
 
-        <div class="subtitle" id="subtitle">
-.......
+        <div class="subtitle" id="subtitle"
+            data-ar="مخصوص ليك انت"
+            data-en="Something special is waiting just for you">
+            Something special is waiting just for you
         </div>
 
         <!-- GIFT AREA -->
-
         <div class="gift-area" id="giftArea">
 
             <!-- BOUQUET -->
-
             <div class="bouquet" id="bouquet">
 
                 <div class="stems">
@@ -95,13 +147,12 @@
             </div>
 
             <!-- CLICK THE BOX ONLY -->
-
             <div
                 class="gift-box"
                 id="giftBox"
                 role="button"
                 tabindex="0"
-                aria-label="افتح الهدية"
+                aria-label="Open the gift"
             >
                 <div class="lid">
                     <div class="ribbon"></div>
@@ -112,26 +163,160 @@
                 </div>
             </div>
 
-            <div class="gift-text" id="giftText">
-.........
+            <div class="gift-text" id="giftText"
+                data-ar="دوس على الهدية"
+                data-en="Tap the gift">
+                Tap the gift
             </div>
 
         </div>
 
-        <!-- MESSAGE -->
-
+        <!-- VALENTINE MESSAGE -->
         <section class="message" id="message">
 
-            <h2>..............</h2>
+            <h2
+                data-ar="لاحلي حاجه في حياتي"
+                data-en="To My Favorite Person">
+                To My Favorite Person
+            </h2>
 
-            <p>
-.............
+            <p
+                data-ar="كل سنه وانتي جنبي ومعايا يا اغلي ما ليا ربنا يخليكي ليا ونفضل مع بعض طول العمر وميحرمنيش منك ابدا &#10; (هنا تفدر تكتب رسالتك مسموح بعدد لا نهائي من الكلمات)"
+                data-en="You make the simplest moments feel special, and every memory with you has a place in my heart. ❤️&#10;&#10;Every day with you reminds me how lucky I am to have you in my life. You're my favorite part of this story.">
+                You make the simplest moments feel special, and every memory with you has a place in my heart. ❤️
+
+                Every day with you reminds me how lucky I am to have you in my life. You're my favorite part of this story.
             </p>
+<!--
+            &#10;
+-->            
+        </section>
 
+        <!-- ORDER CUSTOMIZATION: HIDDEN UNTIL GIFT OPENS -->
+        <section class="customization-section" id="customizationSection">
+
+            <div class="customization-heading">
+                <h2
+                    data-ar="فصل هديتك علي مزاجك"
+                    data-en="Customize your gift">
+                    Customize your gift 
+                </h2>
+
+                <p
+                    data-ar="اكتب التفاصيل اللي تحب تزودها في هديتك"
+                    data-en="Tell us what you'd like in your personalized version">
+                    Tell us what you'd like in your personalized version
+                </p>
+            </div>
+
+            <div class="order-reference-box">
+                <span
+                    data-ar="رقم الطلب"
+                    data-en="draft order reference">
+                    draft order reference
+                </span>
+
+                <strong id="orderReference"></strong>
+            </div>
+
+            <div class="customization-fields">
+
+                <label for="recipientName"
+                    data-ar="اسم الشخص اللي هتقدم له الهدية"
+                    data-en="Your Valentine's name">
+                    Your Valentine's name
+                </label>
+
+                <input
+                    id="recipientName"
+                    type="text"
+                    autocomplete="off"
+                    data-placeholder-ar="اكتب الاسم هنا"
+                    data-placeholder-en="Enter their name"
+                    placeholder="Enter their name"
+                >
+
+                <label for="senderName"
+                    data-ar="اسمك"
+                    data-en="Your name">
+                    Your name
+                </label>
+
+                <input
+                    id="senderName"
+                    type="text"
+                    autocomplete="off"
+                    data-placeholder-ar="اكتب اسمك هنا"
+                    data-placeholder-en="Enter your name"
+                    placeholder="Enter your name"
+                >
+
+                <label for="birthdayDate"
+                    data-ar="المناسبة أو تاريخ حلو بينكو (اختياري)"
+                    data-en="Special date (optional)">
+                    Special date (optional)
+                </label>
+
+                <input id="birthdayDate" type="date">
+
+                <label for="personalMessage"
+                    data-ar="رسالتك"
+                    data-en="Your personal message">
+                    Your personal message
+                </label>
+
+                <textarea
+                    id="personalMessage"
+                    rows="4"
+                    data-placeholder-ar="اكتب الرسالة اللي عايز يشوفها ف الهدية"
+                    data-placeholder-en="Write the message you'd like to share"
+                    placeholder="Write the message you'd like to share"
+                ></textarea>
+
+                <label for="customizationDetails"
+                    data-ar="تفاصيل إضافية"
+                    data-en="Extra details">
+                    Extra details
+                </label>
+
+                <textarea
+                    id="customizationDetails"
+                    rows="3"
+                    data-placeholder-ar="صور، ألوان، أغنية أو أي تفاصيل تانية"
+                    data-placeholder-en="Photos, colors, music, or any other details"
+                    placeholder="Photos, colors, music, or any other details"
+                ></textarea>
+
+            </div>
+
+            <div class="order-actions">
+
+                <button type="button" class="copy-order-button"
+                    id="copyOrderDetails"
+                    data-ar="نسخ تفاصيل الطلب"
+                    data-en="Copy order details">
+                    Copy order details
+                </button>
+
+                <button type="button" class="whatsapp-order-button"
+                    id="sendOrderWhatsApp"
+                    data-ar="اطلب على واتساب"
+                    data-en="Order via WhatsApp">
+                    Order via WhatsApp
+                </button>
+
+                <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+
+                <p class="order-note"
+                    data-ar="النموذج ده للمعاينة. تفاصيل التخصيص والسعر والتأكيد هتتحدد معاك على واتساب."
+                    data-en="This is a demo. Customization details, pricing, and confirmation will be discussed on WhatsApp.">
+                    This is a demo. Customization details, pricing, and confirmation will be discussed on WhatsApp.
+                </p>
+
+            </div>
         </section>
 
         <!-- FOOTER -->
-
         <footer class="site-footer">
             <span>Made with</span>
             <span>4U</span>
